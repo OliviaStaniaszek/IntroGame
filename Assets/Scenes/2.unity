@@ -1016,7 +1016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 998749392}
   m_Layer: 0
-  m_Name: Container
+  m_Name: pickups
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1288,6 +1288,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveValue: {x: 0, y: 0}
   speed: 500
+  scoreText: {fileID: 0}
+  winText: {fileID: 0}
 --- !u!1001 &1599507662
 PrefabInstance:
   m_ObjectHideFlags: 0
