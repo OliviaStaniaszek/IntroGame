@@ -15,10 +15,10 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI winText;
 
 
-    void Start(){
+    void Start() {
         count = 0;
         winText.text = "";
-        SetCountText ();
+        SetCountText();
     }
 
 
@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate () {
+    void FixedUpdate() {
 
         Vector3 movement = new Vector3 ( moveValue.x , 0.0f, moveValue.y);
         GetComponent < Rigidbody >().AddForce ( movement*speed*Time.fixedDeltaTime);
@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
             SetCountText();
         }
     }
-private void SetCountText(){
+private void SetCountText() {
     scoreText.text = "Score: " + count.ToString();
     if(count >= numPickups){
         winText.text = "You win!";
