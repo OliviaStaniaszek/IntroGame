@@ -1288,8 +1288,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveValue: {x: 0, y: 0}
   speed: 500
-  scoreText: {fileID: 0}
-  winText: {fileID: 0}
+  scoreText: {fileID: 872927004}
+  winText: {fileID: 497519904}
 --- !u!1001 &1599507662
 PrefabInstance:
   m_ObjectHideFlags: 0
