@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public Vector2 moveValue;
     public float speed;
     private int count; //count number of pick-ups collected
-    private int numPickups = 8;
+    private int numPickups = 4;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI winText;
 
@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
     void OnTriggerEnter(Collider other){ //calls when object collides, passes in object collided with
         if(other.gameObject.tag == "PickUp"){ //check tag of collided object
             other.gameObject.SetActive(false); // if it was a pickup, deactivate the object
-            count += 1;
+            count ++;
             SetCountText();
         }
     }
