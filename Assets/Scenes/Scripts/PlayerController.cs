@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void onTriggerEnter(Collider other){ //calls when object collides, passes in object collided with
+    void OnTriggerEnter(Collider other){ //calls when object collides, passes in object collided with
         if(other.gameObject.tag == "PickUp"){ //check tag of collided object
             other.gameObject.SetActive(false); // if it was a pickup, deactivate the object
             count += 1;
