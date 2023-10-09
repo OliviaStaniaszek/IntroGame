@@ -14,6 +14,12 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI winText;
 
+    public TextMeshProUGUI playerPosition;
+    public TextMeshProUGUI playerVelocity;
+    public TextMeshProUGUI pickupDistance;
+
+    public Vector3 pos;
+
 
     void Start() {
         count = 0;
@@ -25,6 +31,8 @@ public class PlayerController : MonoBehaviour
     void OnMove(InputValue value)
     {
         moveValue=value.Get<Vector2>();
+        pos = transform.position;
+        playerPosition.text = "Position: " + pos.ToString();
     }
 
     // Update is called once per frame
